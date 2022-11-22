@@ -17,46 +17,45 @@ view_colors = {
     },
     'gray': {
         'text_bg': 'gray', 'text_fg': '#780711', 'cursor': 'purple', 'select_bg' : '#FAEEDD'
-    }
-       
+    }      
 }
 
 # Шрифты
 fonts = {
     'Arial': {
-        'font': ['Arial', 15 ]
+        'font': ['Arial', 15]
     },
     'CSMS': {
-        'font': ['Comic Sans MS', 15 ]
+        'font': ['Comic Sans MS', 15]
     },
     'TNR': {
-        'font': ['Times New Roman', 15 ]
+        'font': ['Times New Roman', 15]
     },
-     'Consolas': {
-        'font': ['Consolas', 15 ]
+    'Consolas': {
+        'font': ['Consolas', 15]
     },
-     'Courier New': {
-        'font': ['Courier New', 15 ]
+    'Courier New': {
+        'font': ['Courier New', 15]
     },
-     'Colonna MT': {
-        'font': ['Colonna Mt', 15 ]
+    'Colonna MT': {
+        'font': ['Colonna Mt', 15]
     },
     'Agency FB': {
-        'font': ['Agency FB', 15 ]
-    },    
-    'Algerian':{
-        'font': ['Algerian', 15 ]
+        'font': ['Agency FB', 15]
     },
-    'Red Hat':{
-        'font': ['Red Hat Mono', 15 ]
+    'Algerian': {
+        'font': ['Algerian', 15]
     },
-    'JetBrains':{
-        'font': ['JetBrains Mono', 15 ]
+    'Red Hat': {
+        'font': ['Red Hat Mono', 15]
     },
-    'Calibri':{
-        'font': ['Calibri Mono', 15 ]
+    'JetBrains': {
+        'font': ['JetBrains Mono', 15]
     },
-    'Monocraft':{
-        'font': ['Monocraft Mono', 15 ]
+    'Calibri': {
+        'font': ['Calibri Mono', 15]
+    },
+    'Monocraft': {
+        'font': ['Monocraft Mono', 15]
     }
 }
