@@ -264,6 +264,7 @@ font_menu_sub.add_command(label = 'Algerian',command = lambda: chenge_fonts('Alg
 font_menu_sub.add_command(label = 'Red Hat',command = lambda: chenge_fonts('Red Hat'))
 font_menu_sub.add_command(label = 'JetBrains', command = lambda: chenge_fonts('JetBrains'))
 font_menu_sub.add_command(label = 'Calibri',command = lambda: chenge_fonts('Calibri'))
+font_menu_sub.add_command(label = 'Monocraft', command = lambda: chenge_fonts('Monocraft'))
 view_menu.add_cascade(label='Шрифт...', menu=font_menu_sub)
 root.config(menu=view_menu)
 

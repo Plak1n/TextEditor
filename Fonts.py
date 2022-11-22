@@ -55,5 +55,8 @@ fonts = {
     },
     'Calibri':{
         'font': ['Calibri Mono', 15 ]
+    },
+    'Monocraft':{
+        'font': ['Monocraft Mono', 15 ]
     }
 }
