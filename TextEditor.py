@@ -80,17 +80,14 @@ def ctrl_key_pressed(event):
     elif event.keysym == 'equal' or event.keysym == 'minus':
         size = findall(r"\d+",text_fild['font'])
         size_new = size[0]
-        print(size_new)
         if event.keysym == 'minus':
             size_new = int(size[0])-1
         else:
             size_new = int(size[0])+1
-        print(size_new)
         text_fild['font'] = sub(r"(\d+)", str(size_new), text_fild['font'])
 
 
 def combination(combination):
-    # change_foreground_window_keyboard_layout(0x4090409)
     if combination == 'Вырезать':
         press_and_release('ctrl+x')
     if combination == 'Увеличить шрифт':
@@ -117,7 +114,7 @@ def recomendation_and_advise():
 def new_file(event=None):
     text_fild.delete('1.0', END)
     root.title("Текстовый редактор | Текущий файл — Untitled")
-
+    return text_fild.get('1.0',END)
 
 # Функция открытия файла
 def open_file(event=None):
@@ -174,12 +171,7 @@ def fast_save(event=None):
 # Функция вывода информации о программе   
 def about_program():
     pv = findall(r"\d+\.\d+\.+\d ",sys.version)
-    pversion = " "
-    for symbol in pv:
-        if symbol == '[' or symbol == "'" or symbol == ']':
-            continue
-        else:
-            pversion += symbol
+    pversion = "3.10.6 "
     messagebox.showinfo(title='ПC "Текстовый редактор"', message=f'Версия: 1.0\nАвтор: Плакхин Даниил\nOC: {sys.platform}\nПрограмма была написана на Python{pversion} ')
 
 
