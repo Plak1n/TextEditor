@@ -3,7 +3,7 @@ import unittest
 from Fonts import view_colors,fonts
 
 class TestCase(unittest.TestCase):
-    
+        
     def setUp(self) -> None:
         return super().setUp()
     
@@ -35,6 +35,9 @@ class TestCase(unittest.TestCase):
     def test_something(self):
         self.assertTrue(te.combination('Увеличить шрифт'))    
 
+    def test_change_language(self):
+        # Изменение языка
+        self.assertTrue(te.change_lang_keyboard())
 
 if __name__ == "__main__":
     unittest.main()

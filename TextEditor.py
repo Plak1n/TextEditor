@@ -50,8 +50,10 @@ def change_lang_keyboard(event=None):
     pf = getattr(u, "GetKeyboardLayout")
     if hex(pf(0)) == '0x4190419':
         change_foreground_window_keyboard_layout(0x4090409)
+        return True
     else:
         change_foreground_window_keyboard_layout(0x4190419)
+        return True
 
 
 # Сочетания клавиш ctrl + key
