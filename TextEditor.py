@@ -2,7 +2,7 @@
 # pip install ctypes, keyboard, py_win_keyboard_layout
 
 import ctypes
-import sys
+import sys,os
 from tkinter import *
 from tkinter import messagebox, Tk, Text, Entry
 from tkinter import filedialog, font
@@ -19,7 +19,7 @@ file_p = 'None'
 root = Tk()
 root.title(f"Текстовый редактор | Текущий файл — {file_name}")
 root.geometry('1200x710')
-root.iconbitmap('D:\Programing_languages\Python\ТРПО\TextEditor\Redactor.ico')
+root.iconbitmap(f"{os.path.dirname(__file__)}\\Redactor.ico")
 main_menu = Menu(root)
 
 

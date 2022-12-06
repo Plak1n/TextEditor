@@ -32,7 +32,7 @@ class TestCase(unittest.TestCase):
 
 
     #@unittest.skip('Skipping')
-    def test_something(self):
+    def test_combination(self):
         self.assertTrue(te.combination('Увеличить шрифт'))    
 
     def test_change_language(self):
